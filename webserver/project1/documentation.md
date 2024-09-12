@@ -1,6 +1,6 @@
 # Project 1
 URL: [your project URL here]
-
+http://67.205.190.55/
 ---
 ## Process:
 
@@ -10,3 +10,5 @@ If you used AI, be sure to cite it correctly via the [Harvard AI Citation Guide]
 
 
 ---
+DOCUMENTATION LINK:
+https://www.notion.so/NETWORKED-MEDIA-26eb778c15434a139eda06e6d714c630 

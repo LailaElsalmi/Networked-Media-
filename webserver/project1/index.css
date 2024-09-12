@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("download\ \(2\).webp");
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.desktop {
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.folder{
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+}
+.folder img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0  auto;
+}
+
+.folder a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.folder a:hover {
+    color: pink;
+}

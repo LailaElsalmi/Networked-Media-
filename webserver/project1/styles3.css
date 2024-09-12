@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+}   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#background-video {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.poem-text{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 50%;
+    max-width: 800px;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: x-large;
+    z-index: 1;
+    overflow: auto;
+    color: white;
+}
+
+.poem-english {
+    position: absolute;
+    top: 199%;
+    left: 70%;
+    width: 50%;
+    max-width: 800px;
+    transform: translate(-50%,-50%);
+    text-align: right;
+    font-size: x-large;
+    z-index: 1;
+    overflow: auto;
+    color: white;
+}
+
