@@ -1,0 +1,18 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+#sun {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, red, yellow, blue);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    transition: background 1s ease;
+}
