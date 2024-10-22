@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
+    <title>Recipes of The Week</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+
+  </head>
+  <body>
+    <!-- nav bar -->
+    <%- include('../partials/header') %>
+    <h1><%= post.title %></h1>
+
+    <h2>Explore our delicous recipes of the week!</h2>
+    <ul>
+      <% recipes.forEach(function(recipe) {%>
+        <li>
+          <a href="/pages/recipe/<%= recipe.id %>"><%= recipe.title %></a>
+        
+        </li>
+      
+      <% }); %>
+    </ul>
+
+  
+
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+  </body>
+</html>

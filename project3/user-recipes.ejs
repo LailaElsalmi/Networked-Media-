@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Recipes</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <h1>User Recipes</h1>
+
+    <form action="/stories" method="POST">
+        <h2>Submit a New Recipe</h2>
+
+        <label for="title">Recipe Title:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="content">Ingredients:</label>
+        <textarea id="content" name="content" required></textarea>
+
+        <label for="content">Instructions:</label>
+        <textarea id="content" name="content" required></textarea>
+
+
+        <button type="submit">Submit Story</button>
+    </form>
+
+    <h2>Your Recipes:</h2>
+    <ul>
+        <% userRecipes.forEach(recipe => { %>
+            <li>
+                <h3><%= recipe.title %></h3>
+                <p><strong>Ingredients:</strong> <%= recipe.ingredients %></p>
+                <p><strong>Instructions:</strong> <%= recipe.instructions %></p>
+            </li>
+        <% }); %>
+    </ul>
+    <%- include('../partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
+    <title>Recipes of The Week</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+
+  </head>
+  <body>
+    <!-- nav bar -->
+    <%- include('../partials/header') %>
+
+    <h1><%= recipe.title %></h1>
+    <h2>Here you will find the recipe for <%= recipe.title %>:</h2>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 package phyllo dough</li>
+        <li>2 cups mixed nuts, chopped</li>
+        <li>1 cup butter, melted</li>
+        <li>1 cup syrup</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <p>
+        1. Preheat oven to 350°F (175°C).
+        <br>
+        2. Layer phyllo dough in a baking dish, brushing each layer with melted butter.
+        <br>
+        3. Spread chopped nuts between layers. Bake until golden brown.
+        <br>
+        4. Drizzle with syrup after baking and let cool before serving.
+    </p>
+  
+
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+  </body>
+</html>

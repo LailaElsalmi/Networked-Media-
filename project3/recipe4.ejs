@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
+    <title>Recipes of The Week</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+
+  </head>
+  <body>
+    <!-- nav bar -->
+    <%- include('../partials/header') %>
+
+    <h1><%= recipe.title %></h1>
+    <h2>Here you will find the recipe for <%= recipe.title %>:</h2>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 cup bulgur wheat</li>
+        <li>2 cups water</li>
+        <li>1/2 cup parsley, chopped</li>
+        <li>1 tomato, diced</li>
+        <li>1 onion, diced</li>
+        <li>Juice of 1 lemon</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <p>
+        1. Boil water and pour over bulgur in a bowl. Let it sit for 20 minutes.
+        <br>
+        2. Fluff with a fork and add parsley, tomato, onion, lemon juice, salt, and pepper.
+        <br>
+        3. Mix well and serve chilled.
+    </p>
+  
+
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+  </body>
+</html>

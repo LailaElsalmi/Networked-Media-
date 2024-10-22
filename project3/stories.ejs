@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
+    <title>Stories</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+
+  </head>
+  <body>
+    <%- include('../partials/header') %>
+
+    <h1>Share your story</h1>
+
+    <form action="/stories" method="POST">
+        <h2>Submit a New Story</h2>
+
+        <label for="title">Story Title:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="content">Story Content:</label>
+        <textarea id="content" name="content" required></textarea>
+
+        <button type="submit">Submit Story</button>
+    </form>
+
+    <h2>Submitted Stories</h2>
+    <div class="stories">
+        <ul>
+            <% if (stories.length > 0) { %>
+                <% stories.forEach(story => { %>
+                    <li>
+                        <h3><%= story.title %></h3>
+                        <p><%= story.content %></p>
+                    </li>
+                <% }) %>
+            <% } else { %>
+                <li>No stories submitted yet!</li>
+            <% } %>
+        </ul>
+    </div>
+
+    <%- include('../partials/footer') %>
+
+
+  </body>

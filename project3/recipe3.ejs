@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
+    <title>Recipes of The Week</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+
+  </head>
+  <body>
+    <!-- nav bar -->
+    <%- include('../partials/header') %>
+
+    <h1><%= recipe.title %></h1>
+    <h2>Here you will find the recipe for <%= recipe.title %>:</h2>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>2 cups fava beans, peeled</li>
+        <li>1/2 cup parsley, chopped</li>
+        <li>1 tsp cumin</li>
+        <li>Salt and pepper to taste</li>
+        <li>Oil for frying</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <p>
+        1. Mash fava beans with parsley and spices until well combined.
+        <br>
+        2. Form into patties and heat oil in a pan.
+        <br>
+        3. Fry patties until golden brown on both sides. Serve hot.
+    </p>
+  
+
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+  </body>
+</html>
