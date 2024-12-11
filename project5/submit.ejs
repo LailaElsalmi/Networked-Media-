@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Gossip</title>
+    <link rel="stylesheet" href="/submit.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="form-container">
+                <h1>Submit Gossip</h1>
+                <form action="/submit" method="POST" enctype="multipart/form-data">
+                    <textarea name="content" placeholder="Write your gossip here..." rows="4" required></textarea><br>
+                    <input type="file" name="image" accept="image/*"><br>
+                    <button type="submit">Submit Gossip</button>
+                </form>
+            </div>
+            <div class="right-panel">
+                <div class="button-circle"><a href="/">Home</a></div>
+                <div class="button-circle"><a href="/posts">Posts</a></div>
+                <div class="button-circle"><a href="/submit">Submit</a></div>
+                <div class="button-circle"><a href="/gallery">Pics</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

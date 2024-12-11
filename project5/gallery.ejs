@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gossip Gallery</title>
+    <link rel="stylesheet" href="/gallery.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="gossip-gallery">
+                <h1></h1>
+                <% if (gossips.length === 0) { %>
+                    <p>No photos in the gallery yet!</p>
+                <% } else { %>
+                    <div class="gallery-grid"> 
+                        <% gossips.forEach(gossip => { %>
+                            <% if (gossip.image) { %>
+                                <div class="gallery-item">
+                                    <img src="/uploads/<%= gossip.image %>" alt="Gossip Image">
+                                </div>
+                            <% } %>
+                        <% }); %>
+                    </div> 
+                <% } %>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right-panel">
+        <div class="button-circle"><a href="/">Home</a></div>
+        <div class="button-circle"><a href="/posts">Posts</a></div>
+        <div class="button-circle"><a href="/submit">Submit</a></div>
+        <div class="button-circle"><a href="/gallery">Pics</a></div>
+    </div>
+</body>
+</html>

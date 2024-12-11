@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gossip Girl - Posts</title>
+    <link rel="stylesheet" href="/posts.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="center-panel">
+                <div class="gossip-box">
+                    <h2></h2>
+                    <% if (posts.length === 0) { %>
+                        <p>No gossip yet...</p>
+                    <% } else { %>
+                        <% posts.forEach(post => { %>
+                            <div class="post">
+                                <h3><%= post.text %></h3>
+                                <% if (post.image) { %>
+                                    <img src="/uploads/<%= post.image %>" alt="Gossip Image" style="width: 100%; max-width: 400px;">
+                                <% } %>
+                                <p><em>(Posted on: <%= post.timestamp %>)</em></p>
+                            </div>
+                        <% }); %>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+     <div class="right-panel">
+        <div class="button-circle"><a href="/">Home</a></div>
+        <div class="button-circle"><a href="/posts">Posts</a></div>
+        <div class="button-circle"><a href="/submit">Submit</a></div>
+        <div class="button-circle"><a href="/gallery">Pics</a></div>
+    </div>
+</body>
+</html>
